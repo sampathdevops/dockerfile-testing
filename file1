@@ -1,0 +1,12 @@
+FROM ubuntu:19.04
+MAINTAINER sampathdevops566@gmail.com
+copy index.html /usr/share/nginx/html/
+copy scorekeeper.js /usr/share/nginx/html/
+copy style.css /usr/share/nginx/html
+RUN apt-get update
+RUN apt-get install nano -y
+RUN apt-get install tree
+RUN apt-get install net-tools
+RUN apt-get install ping
+RUN apt-get install nginx -y
+
